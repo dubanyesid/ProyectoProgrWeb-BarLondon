@@ -1,0 +1,80 @@
+.top-navbar .navbar-light .navbar-nav .nav-link {
+    color: #010101;
+    font-size: 12px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.top-navbar .navbar-light .navbar-nav .nav-item .nav-link:hover {
+    background: #010101;
+    color: grey;
+}
+
+.top-navbar .navbar-light .navbar-nav .nav-item.active .nav-link {
+    background: #010101;
+    color: grey;
+    border-radius: 4px;
+}
+
+.top-navbar .navbar-light {
+    color: white;
+    width: 100%;
+}
+
+#btn-buscar {
+    background-color: #000000;
+    color: grey;
+}
+
+#btn-buscar:hover {
+    background-color: #1f1d1d;
+    color: grey;
+}
+
+
+/*
+.navbar {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: #16222A;
+    background: -webkit-linear-gradient(59deg, #3A6073, #16222A);
+    background: linear-gradient(59deg, #3A6073, #416277);
+    color: white;
+}
+
+.navbar a {
+    color: #fff;
+    font-size: 14px;
+    transition-duration: 0.2s;
+}
+
+.navbar button {
+    color: white;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.navbar-toggle-icon {
+    color: white;
+}
+
+.navbar button:hover {
+    background-color: #1f303b;
+    color: white;
+    -webkit-box-shadow: 2px 6px 36px -3px rgba(74, 74, 120, 1);
+    -moz-box-shadow: 2px 6px 36px -3px rgba(74, 74, 120, 1);
+    box-shadow: 2px 6px 36px -3px rgba(74, 74, 120, 1);
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.form-inline {
+    float: right;
+}
+*/
+
+#logo {
+    height: 70px;
+    width: 100px;
+    margin: 0;
+}
