@@ -79,11 +79,17 @@
         <aside class="col-12 col-md-4">
             <section class="col-12">
                 <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                    <a class="nav-link active show" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">All</a>
-                    <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Drinks</a>
-                    <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Lunch</</a>
-                    <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Dinner</a>
-
+                    <form action="php/filtrar-productos.php" method="get">
+                        <input type="submit" name="categoria" value="Todo">
+                        <input type="submit" name="categoria" value="Bebidas Alcoholicas">
+                        <input type="submit" name="categoria">
+                        <input type="submit" name="categoria">
+                        <!-- <a class="nav-link active show" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Todo</a>
+                        <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Bebidas Alcoholicas</a>
+                        <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Bebidas no Alcoholicas</</a>
+                        <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Comidas Rapidas</a>-->
+                        <button id="btn-buscar " class="btn " type="submit ">Buscar</button>
+                    </form>
                 </div>
             </section>
         </aside>
@@ -98,54 +104,56 @@
                     </div>
                 </form>
             </div>
-            <div id="productos " class="row ">
+            <div id="productos" class="row ">
+
 
                 <div class="btnProducto col-6 col-md-3 " data-carta="1 ">
                     <img class="img-thumbnail " src="img/img-prueba.jpg " />
                 </div>
-                <div class="btnProducto col-6 col-md-3 " data-carta="2 ">
-                    <img class="img-thumbnail " src="img/img-prueba.jpg " />
-                </div>
-                <div class="btnProducto col-6 col-md-3 " data-carta="3 ">
-                    <img class="img-thumbnail " src="img/img-prueba.jpg " />
-                </div>
-                <div class="btnProducto col-6 col-md-3 " data-carta="4 ">
-                    <img class="img-thumbnail " src="img/img-prueba.jpg " />
-                </div>
-                <div class="btnProducto col-6 col-md-3 " data-carta="5 ">
-                    <img class="img-thumbnail " src="img/img-prueba.jpg " />
-                </div>
-                <div class="btnProducto col-6 col-md-3 " data-carta="6 ">
-                    <img class="img-thumbnail " src="img/img-prueba.jpg " />
-                </div>
-                <div class="btnProducto col-6 col-md-3 " data-carta="7 ">
-                    <img class="img-thumbnail " src="img/img-prueba.jpg " />
-                </div>
-                <div class="btnProducto col-6 col-md-3 " data-carta="8 ">
-                    <img class="img-thumbnail " src="img/img-prueba.jpg " />
-                </div>
-                <div class="btnProducto col-6 col-md-3 " data-carta="9 ">
-                    <img class="img-thumbnail " src="img/img-prueba.jpg " />
-                </div>
-                <div class="btnProducto col-6 col-md-3 " data-carta="10 ">
-                    <img class="img-thumbnail " src="img/img-prueba.jpg " />
-                </div>
-                <div class="btnProducto col-6 col-md-3 " data-carta="11 ">
-                    <img class="img-thumbnail " src="img/img-prueba.jpg " />
-                </div>
-                <div class="btnProducto col-6 col-md-3 " data-carta="12 ">
-                    <img class="img-thumbnail " src="img/img-prueba.jpg " />
-                </div>
-                <div class="btnProducto col-6 col-md-3 " data-carta="13 ">
-                    <img class="img-thumbnail " src="img/img-prueba.jpg " />
-                </div>
+
+                <!-- <div class="btnProducto col-6 col-md-3 " data-carta="2 ">
+                        <img class="img-thumbnail " src="img/img-prueba.jpg " />
+                    </div>
+                    <div class="btnProducto col-6 col-md-3 " data-carta="3 ">
+                        <img class="img-thumbnail " src="img/img-prueba.jpg " />
+                    </div>
+                    <div class="btnProducto col-6 col-md-3 " data-carta="4 ">
+                        <img class="img-thumbnail " src="img/img-prueba.jpg " />
+                    </div>
+                    <div class="btnProducto col-6 col-md-3 " data-carta="5 ">
+                        <img class="img-thumbnail " src="img/img-prueba.jpg " />
+                    </div>
+                    <div class="btnProducto col-6 col-md-3 " data-carta="6 ">
+                        <img class="img-thumbnail " src="img/img-prueba.jpg " />
+                    </div>
+                    <div class="btnProducto col-6 col-md-3 " data-carta="7 ">
+                        <img class="img-thumbnail " src="img/img-prueba.jpg " />
+                    </div>
+                    <div class="btnProducto col-6 col-md-3 " data-carta="8 ">
+                        <img class="img-thumbnail " src="img/img-prueba.jpg " />
+                    </div>
+                    <div class="btnProducto col-6 col-md-3 " data-carta="9 ">
+                        <img class="img-thumbnail " src="img/img-prueba.jpg " />
+                    </div>
+                    <div class="btnProducto col-6 col-md-3 " data-carta="10 ">
+                        <img class="img-thumbnail " src="img/img-prueba.jpg " />
+                    </div>
+                    <div class="btnProducto col-6 col-md-3 " data-carta="11 ">
+                        <img class="img-thumbnail " src="img/img-prueba.jpg " />
+                    </div>
+                    <div class="btnProducto col-6 col-md-3 " data-carta="12 ">
+                        <img class="img-thumbnail " src="img/img-prueba.jpg " />
+                    </div>
+                    <div class="btnProducto col-6 col-md-3 " data-carta="13 ">
+                        <img class="img-thumbnail " src="img/img-prueba.jpg " />
+                    </div>-->
             </div>
         </div>
 
 
     </div>
     <div id="add-producto" style="display: none">
-        <a href="" target="_blank" data-toggle="modal" data-target="#exampleModalScrollable">
+        <a href="" target="_blank" data-toggle="modal" data-target="#modal-agregar-producto">
             <p>Agregar Producto
                 <img src="img/add-producto.png" height="50px" alt="">
             </p>
@@ -289,6 +297,9 @@
                     <div class="card">
                         <div class="card-body">
                             <form id="form-agregar" action="" method="post">
+                                <div class="form-group">
+                                    <label for="validation01">JEJE</label> <input type="text" class="form-control" placeholder="Ingrese Usuario" name="codigo">
+                                </div>
                                 <div class="form-group">
                                     <label for="validation01">JEJE</label> <input type="text" class="form-control" placeholder="Ingrese Usuario" name="codigo">
                                 </div>
