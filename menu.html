@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/navbar.css" type="text/css">
@@ -17,6 +17,7 @@
 </head>
 
 <body>
+
     <header class="top-navbar">
         <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-light ">
             <a class="navbar-brand" href="index.html">
@@ -35,7 +36,7 @@
                     </div>
                 </form>
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="in.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
                     <li class="nav-item"><a class="nav-link" href="acerca.html">Acerca de Nosotros</a></li>
                     <li class="nav-item dropdown">
@@ -63,166 +64,151 @@
             </div>
         </section>
     </header>
-    <div class="container">
-        <div class="row">
-            <aside class="col-12 col-md-4">
 
-                <section class="col-12">
+    <div id="ls-productos" class="row">
+        <aside class="col-12 col-md-4">
+            <section class="col-12">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link active show" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">All</a>
+                    <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Drinks</a>
+                    <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Lunch</</a>
+                    <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Dinner</a>
 
-                </section>
-                <section class="col-12">
-                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                        <a class="nav-link active show" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">All</a>
-                        <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Drinks</a>
-                        <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Lunch</</a>
-                        <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Dinner</a>
-                    </div>
-                </section>
-            </aside>
-            <div class="col-12 col-md-8">
-                <div class="row">
-                    <div class="btncarta col-6 col-md-3" data-carta="1">
-                        <img class="img-thumbnail" src="img/img-prueba.jpg" />
+                </div>
+            </section>
+        </aside>
+        <div class=" col-12 col-md-8 ">
+            <div class="container ">
+                <form action=" " method="post " class="form-inline ">
 
+                    <input type="text " placeholder="Buscar " class="form-control mr-sm-2 ">
+                    <div>
+                        <button id="btn-buscar " class="btn " type="submit ">Buscar</button>
+                        <img src="img/icon-shoppingcart.png " height="50px " alt=" ">
                     </div>
-                    <div class="btncarta col-6 col-md-3" data-carta="2">
-                        <img class="img-thumbnail" src="img/img-prueba.jpg" />
-                    </div>
-                    <div class="btncarta col-6 col-md-3" data-carta="3">
-                        <img class="img-thumbnail" src="img/img-prueba.jpg" />
-                    </div>
-                    <div class="btncarta col-6 col-md-3" data-carta="4">
-                        <img class="img-thumbnail" src="img/img-prueba.jpg" />
-                    </div>
-                    <div class="btncarta col-6 col-md-3" data-carta="5">
-                        <img class="img-thumbnail" src="img/img-prueba.jpg" />
-                    </div>
-                    <div class="btncarta col-6 col-md-3" data-carta="6">
-                        <img class="img-thumbnail" src="img/img-prueba.jpg" />
-                    </div>
-                    <div class="btncarta col-6 col-md-3" data-carta="7">
-                        <img class="img-thumbnail" src="img/img-prueba.jpg" />
-                    </div>
-                    <div class="btncarta col-6 col-md-3" data-carta="8">
-                        <img class="img-thumbnail" src="img/img-prueba.jpg" />
-                    </div>
-                    <div class="btncarta col-6 col-md-3" data-carta="9">
-                        <img class="img-thumbnail" src="img/img-prueba.jpg" />
-                    </div>
-                    <div class="btncarta col-6 col-md-3" data-carta="10">
-                        <img class="img-thumbnail" src="img/img-prueba.jpg" />
-                    </div>
-                    <div class="btncarta col-6 col-md-3" data-carta="11">
-                        <img class="img-thumbnail" src="img/img-prueba.jpg" />
-                    </div>
-                    <div class="btncarta col-6 col-md-3" data-carta="12">
-                        <img class="img-thumbnail" src="img/img-prueba.jpg" />
-                    </div>
-                    <div class="btncarta col-6 col-md-3" data-carta="13">
-                        <img class="img-thumbnail" src="img/img-prueba.jpg" />
-                    </div>
+                </form>
+            </div>
+            <div id="productos " class="row ">
+
+                <div class="btnProducto col-6 col-md-3 " data-carta="1 ">
+                    <img class="img-thumbnail " src="img/img-prueba.jpg " />
+                </div>
+                <div class="btnProducto col-6 col-md-3 " data-carta="2 ">
+                    <img class="img-thumbnail " src="img/img-prueba.jpg " />
+                </div>
+                <div class="btnProducto col-6 col-md-3 " data-carta="3 ">
+                    <img class="img-thumbnail " src="img/img-prueba.jpg " />
+                </div>
+                <div class="btnProducto col-6 col-md-3 " data-carta="4 ">
+                    <img class="img-thumbnail " src="img/img-prueba.jpg " />
+                </div>
+                <div class="btnProducto col-6 col-md-3 " data-carta="5 ">
+                    <img class="img-thumbnail " src="img/img-prueba.jpg " />
+                </div>
+                <div class="btnProducto col-6 col-md-3 " data-carta="6 ">
+                    <img class="img-thumbnail " src="img/img-prueba.jpg " />
+                </div>
+                <div class="btnProducto col-6 col-md-3 " data-carta="7 ">
+                    <img class="img-thumbnail " src="img/img-prueba.jpg " />
+                </div>
+                <div class="btnProducto col-6 col-md-3 " data-carta="8 ">
+                    <img class="img-thumbnail " src="img/img-prueba.jpg " />
+                </div>
+                <div class="btnProducto col-6 col-md-3 " data-carta="9 ">
+                    <img class="img-thumbnail " src="img/img-prueba.jpg " />
+                </div>
+                <div class="btnProducto col-6 col-md-3 " data-carta="10 ">
+                    <img class="img-thumbnail " src="img/img-prueba.jpg " />
+                </div>
+                <div class="btnProducto col-6 col-md-3 " data-carta="11 ">
+                    <img class="img-thumbnail " src="img/img-prueba.jpg " />
+                </div>
+                <div class="btnProducto col-6 col-md-3 " data-carta="12 ">
+                    <img class="img-thumbnail " src="img/img-prueba.jpg " />
+                </div>
+                <div class="btnProducto col-6 col-md-3 " data-carta="13 ">
+                    <img class="img-thumbnail " src="img/img-prueba.jpg " />
                 </div>
             </div>
-
         </div>
+
+
     </div>
-    
+    <div id="add-producto">
+        <a href="" target="_blank" data-toggle="modal" data-target="#exampleModalScrollable">
+            <p>Agregar Producto
+                <img src="img/add-producto.png" height="50px" alt="">
+            </p>
+        </a>
+    </div>
 
+    <footer class="mainfooter " role="contentinfo ">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <footer class="mainfooter" role="contentinfo">
-
-        <div class="footer-middle">
-            <div class="container">
-                <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-                <div class="elfsight-app-5a4c1b52-32cc-440f-9f15-610afedd1804"></div>
-                <div class="row">
-                    <div class="col-md-3 col-sm-6">
+        <div class="footer-middle ">
+            <div class="container ">
+                <script src="https://apps.elfsight.com/p/platform.js " defer></script>
+                <div class="elfsight-app-5a4c1b52-32cc-440f-9f15-610afedd1804 "></div>
+                <div class="row ">
+                    <div class="col-md-3 col-sm-6 ">
                         <!--Column1-->
-                        <div class="footer-pad">
+                        <div class="footer-pad ">
                             <h4>Heading 1</h4>
-                            <ul class="list-unstyled">
+                            <ul class="list-unstyled ">
                                 <li>
-                                    <a href="#"></a>
+                                    <a href="# "></a>
                                 </li>
-                                <li><a href="#">Payment Center</a></li>
-                                <li><a href="#">Contact Directory</a></li>
-                                <li><a href="#">Forms</a></li>
-                                <li><a href="#">News and Updates</a></li>
-                                <li><a href="#">FAQs</a></li>
+                                <li><a href="# ">Payment Center</a></li>
+                                <li><a href="# ">Contact Directory</a></li>
+                                <li><a href="# ">Forms</a></li>
+                                <li><a href="# ">News and Updates</a></li>
+                                <li><a href="# ">FAQs</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col-md-3 col-sm-6 ">
                         <!--Column1-->
-                        <div class="footer-pad">
+                        <div class="footer-pad ">
                             <h4>Heading 2</h4>
-                            <ul class="list-unstyled">
-                                <li><a href="#">Website Tutorial</a></li>
-                                <li><a href="#">Accessibility</a></li>
-                                <li><a href="#">Disclaimer</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">FAQs</a></li>
-                                <li><a href="#">Webmaster</a></li>
+                            <ul class="list-unstyled ">
+                                <li><a href="# ">Website Tutorial</a></li>
+                                <li><a href="# ">Accessibility</a></li>
+                                <li><a href="# ">Disclaimer</a></li>
+                                <li><a href="# ">Privacy Policy</a></li>
+                                <li><a href="# ">FAQs</a></li>
+                                <li><a href="# ">Webmaster</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col-md-3 col-sm-6 ">
                         <!--Column1-->
-                        <div class="footer-pad">
+                        <div class="footer-pad ">
                             <h4>Heading 3</h4>
-                            <ul class="list-unstyled">
-                                <li><a href="#">Parks and Recreation</a></li>
-                                <li><a href="#">Public Works</a></li>
-                                <li><a href="#">Police Department</a></li>
-                                <li><a href="#">Fire</a></li>
-                                <li><a href="#">Mayor and City Council</a></li>
+                            <ul class="list-unstyled ">
+                                <li><a href="# ">Parks and Recreation</a></li>
+                                <li><a href="# ">Public Works</a></li>
+                                <li><a href="# ">Police Department</a></li>
+                                <li><a href="# ">Fire</a></li>
+                                <li><a href="# ">Mayor and City Council</a></li>
                                 <li>
-                                    <a href="#"></a>
+                                    <a href="# "></a>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 ">
                         <h4>Follow Us</h4>
-                        <ul class="social-network social-circle">
-                            <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="#" class="icoLinkedin" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#" class="icoLinkedin" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                        <ul class="social-network social-circle ">
+                            <li><a href="# " class="icoFacebook " title="Facebook "><i class="fa fa-facebook "></i></a></li>
+                            <li><a href="# " class="icoLinkedin " title="Linkedin "><i class="fa fa-linkedin "></i></a></li>
+                            <li><a href="# " class="icoLinkedin " title="Twitter "><i class="fa fa-twitter "></i></a></li>
+                            <li><a href="# " class="icoLinkedin " title="Instagram "><i class="fa fa-instagram "></i></a></li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="col-md-12 copy">
-                        <p class="text-center">&copy; Copyright 2019 - Company Name. All rights reserved.</p>
+                <div class="row ">
+                    <div class="col-md-12 copy ">
+                        <p class="text-center ">&copy; Copyright 2019 - Company Name. All rights reserved.</p>
                     </div>
                 </div>
 
@@ -230,10 +216,44 @@
             </div>
         </div>
     </footer>
-    <script src="js/js.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalScrollableTitle">Credenciales de Administrador</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+                </div>
+                <div id="modal-card" class="container">
+                    <div class="card">
+                        <div class="card-body">
+                            <form id="form-ingreso" action="" method="post">
+                                <div class="form-group">
+                                    <label for="validation01">Usuario</label> <input type="text" class="form-control" placeholder="Ingrese Usuario" name="codigo">
+                                </div>
+                                <div class="form-group">
+                                    <label for="validation01">Contraseña</label> <input type="password" class="form-control" placeholder="Ingrese Contraseña" name="num_paginas">
+                                </div>
+                                <input type="submit" class="btn btn-success" value="Ingresar" name="agregar">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/prueba.js "></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
+
 </body>
 
 </html>
