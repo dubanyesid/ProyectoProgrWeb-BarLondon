@@ -214,7 +214,7 @@ span {
 }
 
 .our-team .pic:after {
-    background: rgba(214, 81, 6, 0.8);
+    background: #3A6073;
     top: auto;
     left: auto;
     bottom: -100%;
@@ -367,7 +367,7 @@ span {
 
 /*Contactos*/
 
-*:focus {
+:focus {
     outline: none;
 }
 
@@ -664,6 +664,13 @@ body {
     position: right;
     width: 450px;
     height: 300px;
+}
+
+
+/*, #galeria2, #galeria3 , #galeria4*/
+
+#fraseInicio {
+    text-align: center;
 }
 
 

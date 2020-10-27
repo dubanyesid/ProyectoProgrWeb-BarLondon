@@ -89,13 +89,6 @@
         </aside>
         <div class=" col-12 col-md-8 ">
             <div class="container ">
-                <form action=" " method="post " class="form-inline ">
-                    <input type="text " placeholder="Buscar " class="form-control mr-sm-2 ">
-                    <div>
-                        <button id="btn-buscar " class="btn " type="submit ">Buscar</button>
-                        <img src="img/icon-shoppingcart.png " height="50px " alt=" ">
-                    </div>
-                </form>
             </div>
             <div id="productos" class="row ">
 <?php
@@ -144,18 +137,78 @@ if(!$conexion){
 while($mostrar=mysqli_fetch_array($lista)){
 
     echo("<div class='btnProducto col-6 col-md-3' data-carta='{$i}'>
-    <img class='img-thumbnail' src='{$mostrar['url_img']}' />
-    <p>Precio: {$mostrar['precio']}</p>
-    <p>Descripcion: {$mostrar['descripcion']}</p>
-    </div>");
+            <div class='our-team'>
+                <div class='pic'>
+                        <img src='{$mostrar['url_img']}' width='100' height='100'>
+                    <ul class='social'>
+                        <h4 class='title'> Descripción</h4>
+                        <span class='post'>{$mostrar['descripcion']}</span>
+                    </ul>
+                </div>
+                <div class='team-content'>
+                    <h3 class='title'>Precio</h3>
+                    <span class='post'>{$mostrar['precio']}</span>
+                </div>
+            </div>
+        </div>  
+    ");
+    echo("<div class='btnProducto col-6 col-md-3' data-carta='{$i}'>
+            <div class='our-team'>
+                <div class='pic'>
+                        <img src='{$mostrar['url_img']}' width='100' height='100'>
+                    <ul class='social'>
+                        <h4 class='title'> Descripción</h4>
+                        <span class='post'>{$mostrar['descripcion']}</span>
+                    </ul>
+                </div>
+                <div class='team-content'>
+                    <h3 class='title'>Precio</h3>
+                    <span class='post'>{$mostrar['precio']}</span>
+                </div>
+            </div>
+        </div>  
+    ");
+    echo("<div class='btnProducto col-6 col-md-3' data-carta='{$i}'>
+            <div class='our-team'>
+                <div class='pic'>
+                        <img src='{$mostrar['url_img']}' width='100' height='100'>
+                    <ul class='social'>
+                        <h4 class='title'> Descripción</h4>
+                        <span class='post'>{$mostrar['descripcion']}</span>
+                    </ul>
+                </div>
+                <div class='team-content'>
+                    <h3 class='title'>Precio</h3>
+                    <span class='post'>{$mostrar['precio']}</span>
+                </div>
+            </div>
+        </div>  
+    ");
+    echo("<div class='btnProducto col-6 col-md-3' data-carta='{$i}'>
+            <div class='our-team'>
+                <div class='pic'>
+                        <img src='{$mostrar['url_img']}' width='100' height='100'>
+                    <ul class='social'>
+                        <h4 class='title'> Descripción</h4>
+                        <span class='post'>{$mostrar['descripcion']}</span>
+                    </ul>
+                </div>
+                <div class='team-content'>
+                    <h3 class='title'>Precio</h3>
+                    <span class='post'>{$mostrar['precio']}</span>
+                </div>
+            </div>
+        </div>  
+    ");
+    
 
     $i=$i+1;    
+    
 }
 }else{
     echo(" ");
 }
 ?>
-
             </div>
         </div>
     </div>
@@ -171,8 +224,8 @@ while($mostrar=mysqli_fetch_array($lista)){
 
         <div class="footer-middle ">
             <div class="container ">
-                <script src="https://apps.elfsight.com/p/platform.js " defer></script>
-                <div class="elfsight-app-5a4c1b52-32cc-440f-9f15-610afedd1804 "></div>
+            <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+                <div class="elfsight-app-fb40b734-605e-4250-bbd6-48e924e79440"></div>
                 <div class="row ">
                     <div class="col-md-3 col-sm-6 ">
                         <!--Column1-->
