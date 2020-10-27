@@ -17,16 +17,16 @@ if(!$conexion){
         echo"No se encontró la base de datos";
     }
 }
-$consulta="SELECT * FROM admin WHERE usuario='$usuario' and password='$clave'";
+$consulta="SELECT * FROM admin WHERE user='$usuario' and password='$clave'";
 $resultado=@mysqli_query($conexion,$consulta);
 
 $filas=mysqli_num_rows($resultado);
 
 if($filas>0){
-    header("location:../menu.html?modal=1");
+    header("location:../prueba.php?modal=1&categoria=Todo");
 }else{
     echo("Error de autenticación");
-    header("location:../index.html");
+    //header("location:../index.html");
 }
 
 ?>

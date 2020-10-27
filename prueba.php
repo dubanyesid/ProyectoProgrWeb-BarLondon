@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,17 +29,10 @@
 				  <span class="navbar-toggler-icon"></span>
 				</button>
             <div class="collapse navbar-collapse" id="navbars-rs-food">
-                <form action="" method="post" class="form-inline">
 
-                    <input type="text" placeholder="Buscar" class="form-control mr-sm-2">
-                    <div>
-                        <button id="btn-buscar" class="btn" type="submit">Buscar</button>
-                        <img src="img/icon-shoppingcart.png" height="50px" alt="">
-                    </div>
-                </form>
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="prueba.php?categoria=Todo">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
                     <li class="nav-item"><a class="nav-link" href="acerca.html">Acerca de Nosotros</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Otros</a>
@@ -75,29 +70,26 @@
         </section>
     </header>
 
+    
+
     <div id="ls-productos" class="row">
         <aside class="col-12 col-md-4">
             <section class="col-12">
                 <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                    <!--<form action="php/filtrar-productos.php" method="get">
-                        <input id="submit-list" type="submit" name="categoria" value="Todo">
-                        <input id="submit-list" type="submit" name="categoria" value="Bebidas Alcoholicas">
-                        <input id="submit-list" type="submit" name="categoria" value="Bebidas no Alcoholicas">
-                        <input id="submit-list" type="submit" name=" categoria " value="Comidas Rapidas ">
-
-                        <button id="btn-buscar " class="btn " type="submit ">Buscar</button>
-                    </form>-->
-                    <a href="" class="nav-link active show" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Todo</a>
-                    <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Bebidas Alcoholicas</a>
-                    <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Bebidas no Alcoholicas</</a>
-                    <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Comidas Rapidas</a>
+                    <form action="" method="get" name="form-list">
+                    
+                    <button id="btn-buscar" class="nav-link" type="submit" name="categoria" value="Todo" >Todo</button> 
+                    <button id="btn-buscar" class="nav-link" type="submit" name="categoria" value="Bebidas Alcoholicas">Bebidas Alcholicas</button> 
+                    <button id="btn-buscar" class="nav-link" type="submit" name="categoria" value="Bebidas no Alcoholicas">Bebidas no Alcoholicas</button> 
+                    <button id="btn-buscar" class="nav-link" type="submit" name="categoria" value="Comidas Rapidas">Comidas Rapidas</button> 
+                </form>
+                    
                 </div>
             </section>
         </aside>
         <div class=" col-12 col-md-8 ">
             <div class="container ">
                 <form action=" " method="post " class="form-inline ">
-
                     <input type="text " placeholder="Buscar " class="form-control mr-sm-2 ">
                     <div>
                         <button id="btn-buscar " class="btn " type="submit ">Buscar</button>
@@ -106,52 +98,70 @@
                 </form>
             </div>
             <div id="productos" class="row ">
+<?php
+
+$conexion = @mysqli_connect('localhost','root','');
+
+if(!$conexion){
+?>  
+  <script>
+    alert("No se pudo conectar con el servidor");
+    </script>
+<?php
+}else{
+    $base=@mysqli_select_db($conexion,'inventario-web');
+    
+    if(!$base){
+?>
+     <script>   
+     alert("No se encontró la base de datos");
+    </script>
+<?php    
+    }
+}
+    if(isset($_GET['categoria'])) {
+     
+    $categoria=$_GET['categoria'];
+
+    if($categoria=='Todo'){
+        $sql="SELECT * FROM producto";
+    }else{
+    $consulta_id = "SELECT * FROM categoria WHERE nombre='$categoria'";
 
 
-                <div class="btnProducto col-6 col-md-3 " data-carta="1 ">
-                    <img class="img-thumbnail " src="img/img-prueba.jpg " />
-                </div>
+    $resultado=@mysqli_query($conexion,$consulta_id) ;
 
-                <!-- <div class="btnProducto col-6 col-md-3 " data-carta="2 ">
-                        <img class="img-thumbnail " src="img/img-prueba.jpg " />
-                    </div>
-                    <div class="btnProducto col-6 col-md-3 " data-carta="3 ">
-                        <img class="img-thumbnail " src="img/img-prueba.jpg " />
-                    </div>
-                    <div class="btnProducto col-6 col-md-3 " data-carta="4 ">
-                        <img class="img-thumbnail " src="img/img-prueba.jpg " />
-                    </div>
-                    <div class="btnProducto col-6 col-md-3 " data-carta="5 ">
-                        <img class="img-thumbnail " src="img/img-prueba.jpg " />
-                    </div>
-                    <div class="btnProducto col-6 col-md-3 " data-carta="6 ">
-                        <img class="img-thumbnail " src="img/img-prueba.jpg " />
-                    </div>
-                    <div class="btnProducto col-6 col-md-3 " data-carta="7 ">
-                        <img class="img-thumbnail " src="img/img-prueba.jpg " />
-                    </div>
-                    <div class="btnProducto col-6 col-md-3 " data-carta="8 ">
-                        <img class="img-thumbnail " src="img/img-prueba.jpg " />
-                    </div>
-                    <div class="btnProducto col-6 col-md-3 " data-carta="9 ">
-                        <img class="img-thumbnail " src="img/img-prueba.jpg " />
-                    </div>
-                    <div class="btnProducto col-6 col-md-3 " data-carta="10 ">
-                        <img class="img-thumbnail " src="img/img-prueba.jpg " />
-                    </div>
-                    <div class="btnProducto col-6 col-md-3 " data-carta="11 ">
-                        <img class="img-thumbnail " src="img/img-prueba.jpg " />
-                    </div>
-                    <div class="btnProducto col-6 col-md-3 " data-carta="12 ">
-                        <img class="img-thumbnail " src="img/img-prueba.jpg " />
-                    </div>
-                    <div class="btnProducto col-6 col-md-3 " data-carta="13 ">
-                        <img class="img-thumbnail " src="img/img-prueba.jpg " />
-                    </div>-->
+    $vari =mysqli_fetch_array($resultado) ;
+    
+
+    $id_categoria=$vari['id'];
+    $sql="SELECT * FROM producto WHERE id_categoria='$id_categoria'";
+    }
+    $lista = @mysqli_query($conexion,$sql);
+
+    $i=1;
+
+while($mostrar=mysqli_fetch_array($lista)){
+
+    echo("<div class='btnProducto col-6 col-md-3' data-carta='{$i}'>
+    <img class='img-thumbnail' src='{$mostrar['url-img']}' />
+    <p>Precio: {$mostrar['precio']}</p>
+    </div>");
+
+    $i=$i+1;
+    /*echo("ID: {$mostrar['id']} <br />");
+    echo("Nombre: {$mostrar['nombre']} <br />");
+    echo("Descripcion: {$mostrar['descripcion']} <br />");
+    echo("Categoria: {$mostrar['id_categoria']} <br />");*/
+    
+}
+}else{
+    echo(" ");
+}
+?>
+
             </div>
         </div>
-
-
     </div>
     <div id="add-producto" style="display: none">
         <a href="" target="_blank" data-toggle="modal" data-target="#modal-agregar-producto">
@@ -294,41 +304,52 @@
           <span aria-hidden="true">×</span>
         </button>
                 </div>
-                <div id="modal-card" class="container">
+                    <div class="modal-body">
                     <div class="card">
                         <div class="card-body">
-                            <form id="form-agregar" action="" method="get">
+                            <form id="form-agregar" action="php/agregarProducto.php" method="post">
                                 <div class="form-group">
-                                    <label for="validation01">Nombre</label> <input type="text" class="form-control" placeholder="Ingrese Usuario" name="nombre">
+                                    <label for="validation01">Nombre</label> <input type="text" class="form-control" placeholder="Ingrese Nombre" name="nombre">
                                 </div>
                                 <div class="form-group">
-                                    <label for="validation01">Descripción</label> <input type="text" class="form-control" placeholder="Ingrese Usuario" name="descripcion">
+                                    <label for="validation01">Descripción</label> <input type="text" class="form-control" placeholder="Ingrese Descripción" name="descripcion">
                                 </div>
                                 <div class="form-group">
-                                    <label for="validation01">Precio</label> <input type="number" class="form-control" placeholder="Ingrese Contraseña" name="precio">
+                                    <label for="validation01">Precio</label> <input type="number" class="form-control" placeholder="Ingrese Precio" name="precio">
                                 </div>
                                 <div class="form-group">
-                                    <label for="validation01">Categoria</label> <input type="number" class="form-control" placeholder="Ingrese Contraseña" name="id_categoria">
+                                    <select name="id-categoria">
+                                        <label>Categoria</label>
+                                        <option value="1" name="id-categoria">Comidas Rapidas</option> 
+                                        <option value="2" name="id-categoria">Bebidas Alcoholicas</option>
+                                        <option value="3" name="id-categoria">Bebidas no Alcoholicas</option>
+                                    </select>
                                 </div>
-                                <form id="form-agregar" action="js/cargarImagen.js" method="post">
-                                    <div class="form-group">
-                                        <label for="validation01">Selecciona imagen</label> <input id="img-upload" type="file" class="form-control" placeholder="Ingrese Contraseña" name="url-img">
+                                <div class="form-group">
+                                    <img id="img-preview" src="" height="300px" width="100%">
+                                    <div class="card-footer">
+                                        <input type="file" id="img-uploader" name="url-img" value="">
                                         <progress id="img-upload-bar" value="0" max="100" style="width: 100%"></progress>
                                     </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="validation01">url</label> <input id="in-url" type="text" class="form-control" placeholder="Ingrese Descripción" name="url" value=" " >
+                                </div>
                                     <input type="submit" class="btn btn-success" value="Ingresar" name="agregar">
-                                </form>
                             </form>
+                            
                         </div>
                     </div>
-                </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                 </div>
             </div>
+            </div>
         </div>
     </div>
 
-    <script src="js/prueba.js "></script>
+    <script src="js/cargarImagen.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
@@ -336,3 +357,5 @@
 </body>
 
 </html>
+<?php
+?>

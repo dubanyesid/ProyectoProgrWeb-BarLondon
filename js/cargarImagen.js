@@ -1,7 +1,7 @@
 const imagePreview = document.getElementById('img-preview');
 const imageUploader = document.getElementById('img-uploader');
 const imageUploadbar = document.getElementById('img-upload-bar');
-
+const inurl = document.getElementById('in-url');
 const CLOUDINARY_URL = `https://api.cloudinary.com/v1_1/dfxfvf7ka/image/upload`
 const CLOUDINARY_UPLOAD_PRESET = 'cf9ma2zl';
 
@@ -28,4 +28,6 @@ imageUploader.addEventListener('change', async(e) => {
     );
     console.log(res);
     imagePreview.src = res.data.secure_url;
+    inurl.setAttribute("value", res.data.secure_url);
+
 });
