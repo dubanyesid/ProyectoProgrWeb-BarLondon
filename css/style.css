@@ -123,8 +123,60 @@ span {
     margin: 0;
     padding: 0;
 }
+<<<<<<< HEAD
 
 
+=======
+/*Incicio*/
+#cajaCuatro {
+	border: 1px;
+	width: 95%;
+	height: 345px;
+	margin: 0 auto;
+	margin-top: 1%;
+	border-radius: 5px;
+}
+
+.articulos {
+	border: 1px solid #9E9E9E;
+	width: 46.5%;
+	height: 313px;
+	margin-top: 2%;
+	margin-left: 2%;
+	float: left;
+	border-radius: 5px;
+	transition: 0.5s;
+}
+
+.articulos:hover {
+	box-shadow: 1px 1px 50px black;
+	transition: 0.5s;
+}
+
+#articuloUno {
+	background-image: url(../img/gif-inicio.gif);
+    background-size: 100% 100%;
+    position: left;
+    width: 450px;
+    height: 300px;
+}
+
+#articuloDos {
+	background-image: url(../img/gif-inicio2.gif);
+    background-size: 100% 100%;
+    height:300px ;
+    width:450px;
+    position: center;
+    
+}
+#articuloTres{
+    background-image: url(../img/gif-inicio3.gif);
+    background-size: 100% 100%;
+    height:300px ;
+    width:450px;
+    position: right;
+}
+>>>>>>> 7944d96757d5b21e844c1da5cd3a5faa04ed0069
 /*Empleados*/
 
 .stuff-box {
@@ -304,8 +356,18 @@ span {
         margin-bottom: 30px;
     }
 }
+<<<<<<< HEAD
 
 
+=======
+#fraseInicio{
+
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+text-align: center;
+text-decoration: blanchedalmond;
+text-transform: uppercase;
+}
+>>>>>>> 7944d96757d5b21e844c1da5cd3a5faa04ed0069
 /*Contactos*/
 
 *:focus {
@@ -539,7 +601,61 @@ body {
 #contacto {
     background: linear-gradient(59deg, #344e5f, #4c819b)
 }
+<<<<<<< HEAD
 
 #mapa {
     text-align: center;
 }
+=======
+.mapa{
+    text-align: center;
+}
+#mapa{
+    margin-top: 20px;
+    margin-left: 150px;
+}
+/*contacto*/
+#contacto{
+    background-color: white;
+}
+#servicio{
+    text-align: center;
+}
+#horario{
+    text-align: justify;
+}
+/*Galeria*/
+#galeria1 {
+    margin-top: center;
+    background-size: 100% 100%;
+    margin-left: 80px;
+    position: left;
+    width: 450px;
+    height: 300px;
+}
+#galeria2 {
+    margin-top: center;
+    background-size: 100% 100%;
+    margin-left: 95px;
+   position: right;
+   width: 450px;
+   height: 300px;
+}
+#galeria3{
+    margin-top: center;
+    background-size: 100% 100%;
+    margin-left: 210px;
+   position: right;
+   width: 450px;
+   height: 300px;
+}
+#galeria4{
+    margin-top: center;
+    background-size: 100% 100%;
+    margin-left: 210px;
+   position: right;
+   width: 450px;
+   height: 300px;
+}
+/*, #galeria2, #galeria3 , #galeria4*/
+>>>>>>> 7944d96757d5b21e844c1da5cd3a5faa04ed0069
