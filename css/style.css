@@ -123,10 +123,10 @@ span {
     margin: 0;
     padding: 0;
 }
-<<<<<<< HEAD
 
 
-=======
+
+
 /*Incicio*/
 #cajaCuatro {
 	border: 1px;
@@ -176,7 +176,7 @@ span {
     width:450px;
     position: right;
 }
->>>>>>> 7944d96757d5b21e844c1da5cd3a5faa04ed0069
+
 /*Empleados*/
 
 .stuff-box {
@@ -356,21 +356,11 @@ span {
         margin-bottom: 30px;
     }
 }
-<<<<<<< HEAD
 
 
-=======
-#fraseInicio{
-
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-text-align: center;
-text-decoration: blanchedalmond;
-text-transform: uppercase;
-}
->>>>>>> 7944d96757d5b21e844c1da5cd3a5faa04ed0069
 /*Contactos*/
 
-*:focus {
+:focus {
     outline: none;
 }
 
@@ -601,12 +591,10 @@ body {
 #contacto {
     background: linear-gradient(59deg, #344e5f, #4c819b)
 }
-<<<<<<< HEAD
-
 #mapa {
     text-align: center;
 }
-=======
+
 .mapa{
     text-align: center;
 }
@@ -657,5 +645,8 @@ body {
    width: 450px;
    height: 300px;
 }
+#fraseInicio{
+    text-align: center;
+}
+
 /*, #galeria2, #galeria3 , #galeria4*/
->>>>>>> 7944d96757d5b21e844c1da5cd3a5faa04ed0069
