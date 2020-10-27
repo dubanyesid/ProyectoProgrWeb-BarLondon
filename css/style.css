@@ -130,8 +130,9 @@ span {
 #articuloUno {
 	background-image: url(../img/gif-inicio.gif);
     background-size: 100% 100%;
-    height:300px ;
-    width:450px;
+    position: left;
+    width: 450px;
+    height: 300px;
 }
 
 #articuloDos {
@@ -139,12 +140,15 @@ span {
     background-size: 100% 100%;
     height:300px ;
     width:450px;
+    position: center;
+    
 }
 #articuloTres{
     background-image: url(../img/gif-inicio3.gif);
     background-size: 100% 100%;
     height:300px ;
     width:450px;
+    position: right;
 }
 /*Empleados*/
 
@@ -555,6 +559,20 @@ body{
     background: linear-gradient(59deg,#344e5f, #4c819b)
 
 }
-#mapa{
+.mapa{
     text-align: center;
+}
+#mapa{
+    margin-top: 20px;
+    margin-left: 150px;
+}
+/*contacto*/
+#contacto{
+    background-color: white;
+}
+#servicio{
+    text-align: center;
+}
+#horario{
+    text-align: justify;
 }
