@@ -576,3 +576,37 @@ body{
 #horario{
     text-align: justify;
 }
+/*Galeria*/
+#galeria1 {
+    margin-top: center;
+    background-size: 100% 100%;
+    margin-left: 80px;
+    position: left;
+    width: 450px;
+    height: 300px;
+}
+#galeria2 {
+    margin-top: center;
+    background-size: 100% 100%;
+    margin-left: 95px;
+   position: right;
+   width: 450px;
+   height: 300px;
+}
+#galeria3{
+    margin-top: center;
+    background-size: 100% 100%;
+    margin-left: 210px;
+   position: right;
+   width: 450px;
+   height: 300px;
+}
+#galeria4{
+    margin-top: center;
+    background-size: 100% 100%;
+    margin-left: 210px;
+   position: right;
+   width: 450px;
+   height: 300px;
+}
+/*, #galeria2, #galeria3 , #galeria4*/
