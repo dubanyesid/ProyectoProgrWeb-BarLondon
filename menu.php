@@ -41,13 +41,7 @@
                             <a class="dropdown-item" href="galeria.html">Galeria</a>
                         </div>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Blog</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdown-a">
-                            <a class="dropdown-item" href="reseñas.html">Reseñas</a>
-                            <a class="dropdown-item" href="opiniones.html">Opiniones</a>
-                        </div>
-                    </li>
+                    
                     <li class="nav-item"><a class="nav-link" href="contactenos.html">Contactenos</a></li>
                     <li id="entrar-admin">
                         <a href="" target="_blank" data-toggle="modal" data-target="#exampleModalScrollable">
@@ -220,73 +214,69 @@ while($mostrar=mysqli_fetch_array($lista)){
         </a>
     </div>
 
-    <footer class="mainfooter " role="contentinfo ">
-
-        <div class="footer-middle ">
-            <div class="container ">
-            <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-                <div class="elfsight-app-fb40b734-605e-4250-bbd6-48e924e79440"></div>
-                <div class="row ">
-                    <div class="col-md-3 col-sm-6 ">
+    <footer class="mainfooter" role="contentinfo">
+        <div class="footer-middle">
+            <div class="container">
+                <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-fb40b734-605e-4250-bbd6-48e924e79440"></div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
                         <!--Column1-->
-                        <div class="footer-pad ">
-                            <h4>Heading 1</h4>
-                            <ul class="list-unstyled ">
+                        <div class="footer-pad">
+                            <h4 class="text-center"> <strong>Developers</strong></h4>
+                            <ul class="list-unstyled">
                                 <li>
-                                    <a href="# "></a>
+                                    <a href="#"></a>
                                 </li>
-                                <li><a href="# ">Payment Center</a></li>
-                                <li><a href="# ">Contact Directory</a></li>
-                                <li><a href="# ">Forms</a></li>
-                                <li><a href="# ">News and Updates</a></li>
-                                <li><a href="# ">FAQs</a></li>
+                                <li class="text-center">
+                                    <Strong>Email</Strong>
+                                </li>
+                                <li class="text-center">dubanyesids@ufps.edu.co</li>
+                                <li class="text-center">juansebastiansp@ufps.edu.co</li>
+                                <li class="text-center">josegabrieljr@ufps.edu.co</li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-6 ">
+                    <div class="col-md-3 col-sm-6">
                         <!--Column1-->
-                        <div class="footer-pad ">
-                            <h4>Heading 2</h4>
-                            <ul class="list-unstyled ">
-                                <li><a href="# ">Website Tutorial</a></li>
-                                <li><a href="# ">Accessibility</a></li>
-                                <li><a href="# ">Disclaimer</a></li>
-                                <li><a href="# ">Privacy Policy</a></li>
-                                <li><a href="# ">FAQs</a></li>
-                                <li><a href="# ">Webmaster</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 ">
-                        <!--Column1-->
-                        <div class="footer-pad ">
-                            <h4>Heading 3</h4>
-                            <ul class="list-unstyled ">
-                                <li><a href="# ">Parks and Recreation</a></li>
-                                <li><a href="# ">Public Works</a></li>
-                                <li><a href="# ">Police Department</a></li>
-                                <li><a href="# ">Fire</a></li>
-                                <li><a href="# ">Mayor and City Council</a></li>
-                                <li>
-                                    <a href="# "></a>
+                        <div class="footer-pad">
+                            <h4 class="text-center">
+                                <Strong>¿Que Somos?</Strong>
+                            </h4>
+                            <ul class="list-unstyled">
+                                <li class="text-center">
+                                    <p>Un bar de calidad y relajante, ubicado en la ciudad de cucuta en el barrio caobos, donde la decoracion permite sentir o experimentar a nuestros clientes que se encuentran en londres.
+                                    </p>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-3 ">
-                        <h4>Follow Us</h4>
-                        <ul class="social-network social-circle ">
-                            <li><a href="# " class="icoFacebook " title="Facebook "><i class="fa fa-facebook "></i></a></li>
-                            <li><a href="# " class="icoLinkedin " title="Linkedin "><i class="fa fa-linkedin "></i></a></li>
-                            <li><a href="# " class="icoLinkedin " title="Twitter "><i class="fa fa-twitter "></i></a></li>
-                            <li><a href="# " class="icoLinkedin " title="Instagram "><i class="fa fa-instagram "></i></a></li>
+                    <div class="col-md-3 col-sm-6">
+                        <!--Column1-->
+                        <div class="footer-pad">
+                            <h4 class="text-center">
+                                <Strong> Enlaces de Interes</Strong>
+                            </h4>
+                            <ul class="list-unstyled">
+                                <li class="text-center"><a href="contactenos.html">Ayuda</a></li>
+                                <li class="text-center"><a href="https://www.londres.es/historia">Historia de londres</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>
+                            <Strong>Redes Sociales</Strong>
+                        </h4>
+                        <ul class="social-network social-circle">
+                            <li><a href="https://www.facebook.com/London-Bridge-Pub-121066448584216/photos/?ref=page_internal" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://www.instagram.com/londonbridgepub/" class="icoLinkedin" title="Instagram"><i class="fa fa-instagram"></i></a>
+                            </li>
                         </ul>
                     </div>
                 </div>
-
-                <div class="row ">
-                    <div class="col-md-12 copy ">
-                        <p class="text-center ">&copy; Copyright 2019 - Company Name. All rights reserved.</p>
+                <div class="row">
+                    <div class="col-md-12 copy">
+                        <p class="text-center">&copy; Copyright 2020 </p>
                     </div>
                 </div>
             </div>
