@@ -9,7 +9,7 @@ if(!$conexion){
     </script>
     <?php
 }else{
-    $base=@mysqli_select_db($conexion,'inventario-web');
+    $base=@mysqli_select_db($conexion,'inventario');
     if(!$base){
     ?>
     <script>
@@ -34,15 +34,14 @@ if(!$ejecutar){
     ?>
     <script>
     alert("Hubo algún error, no se pudo registrar");
-    header("location:../menu.php?modal=1&categoria=Todo");
     </script>
     <?php
 }else{
     ?>
     <script>
     alert("Datos guardados correctamente");
-    header("location:../menu.php?modal=1&categoria=Todo");
     </script>
     <?php
 }
+header("location:../menu.php?modal=1&categoria=Todo");
 ?>

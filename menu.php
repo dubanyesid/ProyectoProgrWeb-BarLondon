@@ -96,7 +96,7 @@ if(!$conexion){
     </script>
 <?php
 }else{
-    $base=@mysqli_select_db($conexion,'inventario-web');
+    $base=@mysqli_select_db($conexion,'inventario');
     
     if(!$base){
 ?>
@@ -128,7 +128,7 @@ if(!$conexion){
 
     $i=1;
 
-while($mostrar=mysqli_fetch_array($lista)){
+while($mostrar=@mysqli_fetch_array($lista)){
 
     echo("<div class='btnProducto col-6 col-md-3' data-carta='{$i}'>
             <div class='our-team'>

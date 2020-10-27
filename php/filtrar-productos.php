@@ -9,7 +9,7 @@ $conexion = @mysqli_connect('localhost','root','');
 if(!$conexion){
     echo"No se pudo conectar con el servidor";
 }else{
-    $base=@mysqli_select_db($conexion,'inventario-web');
+    $base=@mysqli_select_db($conexion,'inventario');
     
     if(!$base){
         echo"No se encontró la base de datos";
