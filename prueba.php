@@ -145,8 +145,13 @@ while($mostrar=mysqli_fetch_array($lista)){
 
     echo("<div class='btnProducto col-6 col-md-3' data-carta='{$i}'>
     <img class='img-thumbnail' src='{$mostrar['url-img']}' />
-    <p>Precio: {$mostrar['precio']}</p>
+    <ul>
+    <li class="text-center">Precio: {$mostrar['precio']}</li>
+    <li class="text-center">Descripcion:{ $mostrar['descripcion']}</li>
+    </ul>    
     </div>");
+
+
 
     $i=$i+1;
     /*echo("ID: {$mostrar['id']} <br />");
