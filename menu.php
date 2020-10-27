@@ -32,7 +32,7 @@
 
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
                     <li class="nav-item"><a class="nav-link" href="acerca.html">Acerca de Nosotros</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Otros</a>
@@ -144,16 +144,12 @@ if(!$conexion){
 while($mostrar=mysqli_fetch_array($lista)){
 
     echo("<div class='btnProducto col-6 col-md-3' data-carta='{$i}'>
-    <img class='img-thumbnail' src='{$mostrar['url-img']}' />
+    <img class='img-thumbnail' src='{$mostrar['url_img']}' />
     <p>Precio: {$mostrar['precio']}</p>
+    <p>Descripcion: {$mostrar['descripcion']}</p>
     </div>");
 
-    $i=$i+1;
-    /*echo("ID: {$mostrar['id']} <br />");
-    echo("Nombre: {$mostrar['nombre']} <br />");
-    echo("Descripcion: {$mostrar['descripcion']} <br />");
-    echo("Categoria: {$mostrar['id_categoria']} <br />");*/
-    
+    $i=$i+1;    
 }
 }else{
     echo(" ");

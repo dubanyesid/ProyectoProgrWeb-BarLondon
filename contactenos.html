@@ -16,95 +16,93 @@
     <title>Bar london</title>
 </head>
 
-<body><header class="top-navbar">
-    <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-light ">
-        <a class="navbar-brand" href="index.html">
-            <img id="logo" src="img/logo-bar.png" alt="" />
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-rs-food" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+<body>
+    <header class="top-navbar">
+        <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-light ">
+            <a class="navbar-brand" href="index.html">
+                <img id="logo" src="img/logo-bar.png" alt="" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-rs-food" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-        <div class="collapse navbar-collapse" id="navbars-rs-food">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
-                <li class="nav-item"><a class="nav-link" href="acerca.html">Acerca de Nosotros</a></li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Otros</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdown-a">
-                        <a class="dropdown-item" href="empleados.html">Empleados</a>
-                        <a class="dropdown-item" href="galeria.html">Galeria</a>
-                    </div>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="contactenos.html">Contactenos</a></li>
-            </ul>
-        </div>
-    </nav>
-    <section class="banner-contacto">
-        <div class="banner-content-contacto">
-        </div>
-    </section>
-</header>
-<div id= "contacto">
-<div id="img-der" class="row">
-    <div class="col-lg-6 col-md-6 col-sm-12 text-center">
-        
-        <h1>Contactanos <span>Bar London Bridge</span></h1>
-        <br>
-        <div id="contacto" class="inner-column">
-           
-            
-            <div>
-                <ul>
-                     <span id="required_notification"><span><h6>* Datos requeridos</h6></span></span>
-                    <li> <label id="name">Nombre:</label> <input type="text" placeholder="Carlos Rosendo Gutierrez"
-                            required /> </li>
-                            <br>
-                    <li> <label id="email" for="email"> Correo  :</label> <input type="email" name="email" placeholder="nombre@algo.com"
-                            required /> <span class="form_hint">Formato correcto: "nombre@algo.com"</span> </li>
-                            <br>
-                    <li> <label id="mensaje" for="message">Mensaje:</label> <textarea name="message" cols="40" rows="6"
-                            required></textarea>
+            <div class="collapse navbar-collapse" id="navbars-rs-food">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.php?categoria=Todo">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="acerca.html">Acerca de Nosotros</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Otros</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown-a">
+                            <a class="dropdown-item" href="empleados.html">Empleados</a>
+                            <a class="dropdown-item" href="galeria.html">Galeria</a>
+                        </div>
                     </li>
-                    <br>
-                    <button class="submit" type="submit">Enviar mensaje</button> 
+                    <li class="nav-item"><a class="nav-link" href="contactenos.html">Contactenos</a></li>
                 </ul>
             </div>
+        </nav>
+        <section class="banner-contacto">
+            <div class="banner-content-contacto">
+            </div>
+        </section>
+    </header>
+    <div id="contacto">
+        <div id="img-der" class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 text-center">
+
+                <h1>Contactanos <span>Bar London Bridge</span></h1>
+                <br>
+                <div id="contacto" class="inner-column">
+
+
+                    <div>
+                        <ul>
+                            <span id="required_notification"><span><h6>* Datos requeridos</h6></span></span>
+                            <li> <label id="name">Nombre:</label> <input type="text" placeholder="Carlos Rosendo Gutierrez" required /> </li>
+                            <br>
+                            <li> <label id="email" for="email"> Correo  :</label> <input type="email" name="email" placeholder="nombre@algo.com" required /> <span class="form_hint">Formato correcto: "nombre@algo.com"</span> </li>
+                            <br>
+                            <li> <label id="mensaje" for="message">Mensaje:</label> <textarea name="message" cols="40" rows="6" required></textarea>
+                            </li>
+                            <br>
+                            <button class="submit" type="submit">Enviar mensaje</button>
+                        </ul>
+                    </div>
+                </div>
+                <br>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-12">
+
+                <h1 id="servicio">Horario de Servicio</h1>
+                <div>
+                    <br>
+                    <ul id="horario">
+                        <h3>-Lunes : 2pm - 2am</h3>
+                        <h3>-Martes : 2pm - 2am</h3>
+                        <h3>-Miercoles : 2pm - 2am</h3>
+                        <h3>-Jueves : 2pm - 2am</h3>
+                        <h3>-Viernes : 2pm - 2am</h3>
+                        <h3>-Sabado : 2pm - 2am</h3>
+                        <h3>-Domingo : 2pm - 2am</h3>
+                    </ul>
+
+
+
+                </div>
+                <br>
+
+
+            </div>
+            <br>
+
         </div>
-        <br>
-    </div>
-    
-    <div class="col-lg-6 col-md-6 col-sm-12">
-        
-        <h1 id="servicio">Horario de Servicio</h1>
-    <div>
-        <br>
-    <ul id="horario">
-         <h3>-Lunes : 2pm  -  2am</h3>
-        <h3>-Martes : 2pm  -  2am</h3>
-         <h3>-Miercoles : 2pm  -  2am</h3>
-         <h3>-Jueves : 2pm  -  2am</h3>
-         <h3>-Viernes : 2pm  -  2am</h3>
-         <h3>-Sabado : 2pm  -  2am</h3>
-         <h3>-Domingo : 2pm  -  2am</h3>
-    </ul>
-
-
-
-    </div>
-        <br>
-       
 
     </div>
     <br>
-    
-</div>
-
-</div>
-<br>
-<h1 class="mapa">Conoce Nuestra Ubicación</h1>
-    <iframe id="mapa"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.963490028347!2d-72.4906865859007!3d7.898883307838957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6645102f9b7269%3A0xab4b03ed6c85830e!2sUniversidad%20Francisco%20de%20Paula%20Santander!5e0!3m2!1ses!2sco!4v1603571967198!5m2!1ses!2sco"
-    width="80%" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <h1 class="mapa">Conoce Nuestra Ubicación</h1>
+    <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.963490028347!2d-72.4906865859007!3d7.898883307838957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6645102f9b7269%3A0xab4b03ed6c85830e!2sUniversidad%20Francisco%20de%20Paula%20Santander!5e0!3m2!1ses!2sco!4v1603571967198!5m2!1ses!2sco"
+        width="80%" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
 
 
@@ -123,80 +121,89 @@
 
 
 
-<footer class="mainfooter" role="contentinfo">
+    <footer class="mainfooter" role="contentinfo">
 
-    <div class="footer-middle">
-        <div class="container">
-            <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-            <div class="elfsight-app-5a4c1b52-32cc-440f-9f15-610afedd1804"></div>
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <!--Column1-->
-                    <div class="footer-pad">
-                        <h4 class="text-center"> <strong>Developers</strong></h4>
-                        <ul class="list-unstyled">
-                            <li>
-                                <a href="#"></a>
+        <div class="footer-middle">
+            <div class="container">
+                <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+                <div class="elfsight-app-5a4c1b52-32cc-440f-9f15-610afedd1804"></div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <!--Column1-->
+                        <div class="footer-pad">
+                            <h4 class="text-center"> <strong>Developers</strong></h4>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#"></a>
+                                </li>
+                                <li class="text-center">
+                                    <Strong>Email</Strong>
+                                </li>
+                                <li class="text-center">dubanyesids@ufps.edu.co</li>
+                                <li class="text-center">juansebastiansp@ufps.edu.co</li>
+                                <li class="text-center">josegabrieljr@ufps.edu.co</li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <!--Column1-->
+                        <div class="footer-pad">
+                            <h4 class="text-center">
+                                <Strong>¿Que Somos?</Strong>
+                            </h4>
+                            <ul class="list-unstyled">
+                                <li class="text-center">
+                                    <p>Un bar de calidad y relajante, ubicado en la ciudad de cucuta en el barrio caobos, donde la decoracion permite sentir o experimentar a nuestros clientes que se encuentran en londres.
+
+                                    </p>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <!--Column1-->
+                        <div class="footer-pad">
+                            <h4 class="text-center">
+                                <Strong> Enlaces de Interes</Strong>
+                            </h4>
+                            <ul class="list-unstyled">
+                                <li class="text-center"><a href="contactenos.html">Ayuda</a></li>
+                                <li class="text-center"><a href="https://www.londres.es/historia">Historia de londres</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>
+                            <Strong>Redes Sociales</Strong>
+                        </h4>
+                        <ul class="social-network social-circle">
+                            <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#" class="icoLinkedin" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#" class="icoLinkedin" title="Instagram"><i class="fa fa-instagram"></i></a>
                             </li>
-                            <li class="text-center"><Strong>Email</Strong></li>
-                            <li class="text-center">dubanyesids@ufps.edu.co</li>
-                            <li class="text-center">juansebastiansp@ufps.edu.co</li>
-                            <li class="text-center">josegabrieljr@ufps.edu.co</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 copy">
+                        <p class="text-center">&copy; Copyright 2020 </p>
+                    </div>
+                </div>
 
 
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <!--Column1-->
-                    <div class="footer-pad">
-                        <h4 class="text-center"><Strong>¿Que Somos?</Strong></h4>
-                        <ul class="list-unstyled">
-                            <li class="text-center"><p>Un bar de calidad y relajante, ubicado en la ciudad de cucuta en el barrio caobos, donde
-                                la decoracion permite sentir o experimentar a nuestros clientes que se encuentran en londres. 
-                                
-                            </p>  </li>
-                       
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <!--Column1-->
-                    <div class="footer-pad">
-                        <h4 class="text-center"><Strong> Enlaces de Interes</Strong></h4>
-                        <ul class="list-unstyled">
-                            <li class="text-center"><a href="contactenos.html">Ayuda</a></li>
-                            <li class="text-center"><a href="https://www.londres.es/historia">Historia de londres</a></li>
-                            
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <h4 ><Strong>Redes Sociales</Strong></h4>
-                    <ul class="social-network social-circle">
-                        <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="#" class="icoLinkedin" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#" class="icoLinkedin" title="Instagram"><i class="fa fa-instagram"></i></a>
-                        </li>
-                    </ul>
-                </div>
             </div>
-
-            <div class="row">
-                <div class="col-md-12 copy">
-                    <p class="text-center">&copy; Copyright 2020 </p>
-                </div>
-            </div>
-
-
         </div>
-    </div>
-</footer>
-<script src="js/js.js"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </footer>
+    <script src="js/js.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 
 </html>

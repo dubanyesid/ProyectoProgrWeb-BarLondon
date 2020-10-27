@@ -1,25 +1,36 @@
 <?php
 
- $conexion = @mysqli_connect("localhost","root","");
+ $conexion = @mysqli_connect('localhost','root','');
+
+if(!$conexion){
+    ?>
+    <script>
+    alert("No se pudo conectar con el servidor");
+    </script>
+    <?php
+}else{
+    $base=@mysqli_select_db($conexion,'inventario-web');
+    if(!$base){
+    ?>
+    <script>
+    alert("No se encontró la base de datos");
+    </script>
+    <?php  
+    }
+}
+
 
  $nombre=$_POST['nombre'];
- echo($nombre);
  $descripcion=$_POST['descripcion'];
- echo($descripcion);
- $url_img=$_POST['url-img'];
- echo($url_img);
+ $url_img=$_POST['url'];
  $precio=$_POST['precio'];
- echo($precio);
  $categoria=$_POST['id-categoria'];
- echo($categoria);
 
- $base = @mysqli_select_db($conexion,"inventario-web");
+ $sql="INSERT INTO producto(nombre, descripcion, url_img, precio, id_categoria)  VALUES ('$nombre','$descripcion','$url_img','$precio','$categoria')";
 
- $consulta="INSERT INTO producto VALUES ('$nombre','$descripcion','$url_img','$precio','$categoria')";
+ $ejecutar=@mysqli_query($conexion,$sql);
 
- $resultado=@mysqli_query($conexion,$consulta);
-
-if(!$resultado){
+if(!$ejecutar){
     ?>
     <script>
     alert("Hubo algún error, no se pudo registrar");
@@ -28,7 +39,7 @@ if(!$resultado){
 }else{
     ?>
     <script>
-    alert("Hubo algún error, no se pudo registrar");
+    alert("Datos guardados correctamente");
     </script>
     <?php
 }
