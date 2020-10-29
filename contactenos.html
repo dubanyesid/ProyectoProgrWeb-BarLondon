@@ -53,20 +53,20 @@
                 <h1>Contactanos <span>Bar London Bridge</span></h1>
                 <br>
                 <div id="contacto" class="inner-column">
-
-
                     <div>
-                        <ul>
-                            <span id="required_notification"><span><h6>* Datos requeridos</h6></span></span>
-                            <li> <label id="name">Nombre:</label> <input type="text" placeholder="Carlos Rosendo Gutierrez" required /> </li>
-                            <br>
-                            <li> <label id="email" for="email"> Correo  :</label> <input type="email" name="email" placeholder="nombre@algo.com" required /> <span class="form_hint">Formato correcto: "nombre@algo.com"</span> </li>
-                            <br>
-                            <li> <label id="mensaje" for="message">Mensaje:</label> <textarea name="message" cols="40" rows="6" required></textarea>
-                            </li>
-                            <br>
-                            <button class="submit" type="submit">Enviar mensaje</button>
-                        </ul>
+                        <form id="form-agregar" action="php/agregarProducto.php" method="post">
+                            <div class="form-group">
+                                <label for="validation01">Nombre</label> <input type="text" class="form-control" placeholder="Ingrese Nombre" name="nombre">
+                            </div>
+                            <div class="form-group">
+                                <label for="validation01">Correo</label> <input type="text" class="form-control" placeholder="Ingrese Descripción" name="correo">
+                            </div>
+                            <div class="form-group">
+                                <label for="validation01">Mensaje</label> <input type="text" class="form-control" height="200px" placeholder="Ingrese Precio" name="mensaje">
+                            </div>
+
+                            <input type="submit" class="btn btn-primary" value="Enviar" name="enviar">
+                        </form>
                     </div>
                 </div>
                 <br>
@@ -86,39 +86,24 @@
                         <h3>-Sabado : 2pm - 2am</h3>
                         <h3>-Domingo : 2pm - 2am</h3>
                     </ul>
-
-
-
                 </div>
                 <br>
-
-
             </div>
             <br>
-
         </div>
-
     </div>
     <br>
-    <h1 class="mapa">Conoce Nuestra Ubicación</h1>
-    <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.963490028347!2d-72.4906865859007!3d7.898883307838957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6645102f9b7269%3A0xab4b03ed6c85830e!2sUniversidad%20Francisco%20de%20Paula%20Santander!5e0!3m2!1ses!2sco!4v1603571967198!5m2!1ses!2sco"
-        width="80%" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <div class="about-section-box">
+        <div id="img-izq" class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <h1 class="mapa">Conoce Nuestra Ubicación</h1>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.1266442167516!2d-72.49907718522127!3d7.881815894321643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e664598aa172d23%3A0xe331e1c4cde1437a!2sEnglish%20London%20Bridge%20Pub!5e0!3m2!1ses!2sco!4v1603932339774!5m2!1ses!2sco"
+                width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+    </div>
 
 
     <footer class="mainfooter" role="contentinfo">
